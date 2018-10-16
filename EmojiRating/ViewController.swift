@@ -8,13 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,RateDelegate {
+    
+    var rate:EmojiRateView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        rate = self.addRateView()
     }
 
+    @IBAction func TapRateButton(_ sender: Any) {
+        rate.showView()
+    }
+    
+    func Rate(value: Int) {
+        // here your code
+        print(value)
+    }
+    
+}
 
+extension UIViewController {
+    
+    func addRateView() -> EmojiRateView {
+        let rate = Bundle.main.loadNibNamed("EmojiRate", owner: nil, options: nil)?.first as! EmojiRateView
+        self.view.addSubview(rate)
+        rate.frame = view.frame
+        rate.Delegate = self as? RateDelegate
+        return rate
+    }
+    
 }
 
