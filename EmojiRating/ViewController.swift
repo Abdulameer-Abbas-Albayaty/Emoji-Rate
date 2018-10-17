@@ -10,18 +10,18 @@ import UIKit
 
 class ViewController: UIViewController,RateDelegate {
     
-    var rate:EmojiRateView!
+    var emRate:EmojiRateView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        rate = self.addRateView()
+        emRate = self.addRateView()
         // show the view of rating
-        rate.showView()
+        emRate.showView()
     }
 
     @IBAction func TapRateButton(_ sender: Any) {
-        rate.showView()
+        emRate.showView()
     }
     
     func Rate(value: Int) {
