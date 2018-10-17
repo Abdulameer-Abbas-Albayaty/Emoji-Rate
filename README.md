@@ -20,7 +20,7 @@ emRate = self.addRateView()
 ```swift
 emRate.showView()
 ```
-- Finnaly you get the value of rating from impelmented function:
+- Finally you get the value of rating from impelmented function:
 ```swift
 func Rate(value: Int) {
      // here write your code
