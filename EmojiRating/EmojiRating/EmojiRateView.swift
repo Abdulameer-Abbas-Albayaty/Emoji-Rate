@@ -68,3 +68,15 @@ class EmojiRateView: UIView {
     }
     
 }
+
+extension UIViewController {
+    
+    func addRateView() -> EmojiRateView {
+        let rate = Bundle.main.loadNibNamed("EmojiRate", owner: nil, options: nil)?.first as! EmojiRateView
+        self.view.addSubview(rate)
+        rate.frame = view.frame
+        rate.Delegate = self as? RateDelegate
+        return rate
+    }
+    
+}

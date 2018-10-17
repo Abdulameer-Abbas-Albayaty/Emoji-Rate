@@ -16,6 +16,8 @@ class ViewController: UIViewController,RateDelegate {
         super.viewDidLoad()
         
         rate = self.addRateView()
+        // show the view of rating
+        rate.showView()
     }
 
     @IBAction func TapRateButton(_ sender: Any) {
@@ -23,20 +25,8 @@ class ViewController: UIViewController,RateDelegate {
     }
     
     func Rate(value: Int) {
-        // here your code
+        // here write your code
         print(value)
-    }
-    
-}
-
-extension UIViewController {
-    
-    func addRateView() -> EmojiRateView {
-        let rate = Bundle.main.loadNibNamed("EmojiRate", owner: nil, options: nil)?.first as! EmojiRateView
-        self.view.addSubview(rate)
-        rate.frame = view.frame
-        rate.Delegate = self as? RateDelegate
-        return rate
     }
     
 }
