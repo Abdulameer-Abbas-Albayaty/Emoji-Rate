@@ -1,6 +1,8 @@
 # Em-Rate
 If you want to put rating in your application and you bored from using stars, this repo will help you.
-
+# Requirement
+- Swift 4.2
+- Xcode 10
 # Introduction
 We used to use stars in rating anythings ,so for break the chain i tried to make a simple reusable application.
 ![Pension]
