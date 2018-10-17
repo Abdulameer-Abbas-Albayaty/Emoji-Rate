@@ -27,4 +27,4 @@ func Rate(value: Int) {
      print(value)
 }
 ```
-![]("https://github.com/Abdulameer-Abbas-Albayaty/Em-Rate/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-10-17%20at%2011.57.01.png")
+![](https://github.com/Abdulameer-Abbas-Albayaty/Em-Rate/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-10-17%20at%2011.57.01.png)
