@@ -5,8 +5,8 @@ If you want to put rating in your application and you bored from using stars, th
 - Xcode 10
 # Introduction
 We used to use stars in rating anythings ,so for break the chain i tried to make a simple reusable application.
-# How to install Em-Rate ![link]("https://github.com/Abdulameer-Abbas-Albayaty/Emoji-Rate/tree/master/EmojiRating/EmojiRating")
-- Go to link above and add the files to your project.
+# How to install Em-Rate 
+- Go to EmojiRate folder and add the files to your project.
 - Impelment RateDelegate protocol.
 - Define valriable from EmojiRateView 
 ```swiftEmojiRating
